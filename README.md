@@ -69,7 +69,23 @@ Copy the current selection
 **Ctr+r**
 
 
-#### Kill buffer and window
+#### Go to right window
+
+**Ctr+right**
+
+#### Go to left window
+
+**Ctr+left**
+
+#### Go to up window
+
+**Ctr+up**
+
+#### Go to left window
+
+**Ctr+left**
+
+#### Quit window
 
 **Ctr+f4**
 
