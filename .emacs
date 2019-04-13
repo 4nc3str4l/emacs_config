@@ -1,4 +1,3 @@
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -49,6 +48,9 @@
 ;; Ctr + f find
 (global-set-key "\C-f" 'search-forward)
 
+;; Ctr + F4 kill buffer and window
+(global-set-key [C-f4] 'quit-window)
+
 ;; Ctr + G go to lone
 (global-set-key "\C-g" 'goto-line)
 
@@ -60,9 +62,6 @@
 (global-set-key [C-left] 'windmove-left)
 (global-set-key [C-up] 'windmove-up)
 (global-set-key [C-down] 'windmove-down)
-
-;; Ctr + F4 kill buffer and window
-(global-set-key [C-f4] 'quit-window)
 
 ;; open recent file
 (recentf-mode 1)
