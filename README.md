@@ -73,6 +73,14 @@ Copy the current selection
 
 **Ctr+f4**
 
+#### Go to line
+
+**Ctr+g**
+
+#### Select all buffer
+
+**Ctr+a**
+
 
 
 
