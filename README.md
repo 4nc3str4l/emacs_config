@@ -20,7 +20,7 @@ Get the list of the recent files that were open.
 
 #### Move lines up and down
 
-Ctr + Shift + up or down keys
+**Ctr + Shift + up or down keys**
 
 Moves the current line up or down
 
