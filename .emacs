@@ -12,7 +12,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (tango-dark)))
  '(inhibit-startup-screen t)
- '(package-selected-packages (quote (##))))
+ '(package-selected-packages (quote (ace-window ##))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -49,14 +49,20 @@
 ;; Ctr + f find
 (global-set-key "\C-f" 'search-forward)
 
-;; Ctr + F4 kill buffer and window
-(global-set-key [C-f4] 'kill-buffer-and-window)
-
 ;; Ctr + G go to lone
 (global-set-key "\C-g" 'goto-line)
 
 ;; Ctr + A go to lone
 (global-set-key "\C-a" 'mark-whole-buffer)
+
+;; window movement
+(global-set-key [C-right] 'windmove-right)
+(global-set-key [C-left] 'windmove-left)
+(global-set-key [C-up] 'windmove-up)
+(global-set-key [C-down] 'windmove-down)
+
+;; Ctr + F4 kill buffer and window
+(global-set-key [C-f4] 'quit-window)
 
 ;; open recent file
 (recentf-mode 1)
