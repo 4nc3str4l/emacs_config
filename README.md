@@ -13,6 +13,7 @@ install company mode
 - Hide all the menus on the top bar.
 - Start with 2 windows
 - Start company mode for every file.
+- Display time
 
 ### Shortcuts:
 
