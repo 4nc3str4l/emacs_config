@@ -112,3 +112,6 @@
   (save-excursion
     (indent-region (point-min) (point-max) nil)))
 (global-set-key [f12] 'indent-buffer)
+
+;; Display time mode
+(display-time-mode 1)
