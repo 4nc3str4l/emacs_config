@@ -97,6 +97,10 @@ Copy the current selection
 
 **Ctr+a**
 
+#### Auto indent buffer
+
+**F12**
+
 
 
 
