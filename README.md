@@ -8,12 +8,19 @@ install company mode
 
 ### Mysc:
 
-- Theme **tango-dark** I really like how it looks.
+- Theme **manoj-dark** I really like how it looks.
 - Remove startup screen.
 - Hide all the menus on the top bar.
 - Start with 2 windows
 - Start company mode for every file.
 - Display time
+- Closing brackets
+
+### Functions:
+
+**new-name**
+
+Renames the current buffer
 
 ### Shortcuts:
 
