@@ -9,7 +9,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (tango-dark)))
+ '(ansi-color-names-vector
+   ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
+ '(custom-enabled-themes (quote (manoj-dark)))
  '(inhibit-startup-screen t)
  '(package-selected-packages (quote (company ace-window ##))))
 (custom-set-faces
@@ -22,10 +24,16 @@
 ;; Disable all top bars
 (menu-bar-mode -1)
 (toggle-scroll-bar -1)
-(tool-bar-mode -1) 
+(tool-bar-mode -1)
+
+;; Used to display closing brackets
+(show-paren-mode -1)
 
 ;; Split window in 2
 (split-window-right)
+
+;; Revert file changes from disk
+(global-auto-revert-mode t)
 
 ;; Company mode for every buffer
 (add-hook 'after-init-hook 'global-company-mode)
@@ -115,3 +123,19 @@
 
 ;; Display time mode
 (display-time-mode 1)
+
+;; source: http://steve.yegge.googlepages.com/my-dot-emacs-file
+(defun rename-file-and-buffer (new-name)
+  "Renames both current buffer and file it's visiting to NEW-NAME."
+  (interactive "sNew name: ")
+  (let ((name (buffer-name))
+        (filename (buffer-file-name)))
+    (if (not filename)
+        (message "Buffer '%s' is not visiting a file!" name)
+      (if (get-buffer new-name)
+          (message "A buffer named '%s' already exists!" new-name)
+        (progn
+          (rename-file filename new-name 1)
+          (rename-buffer new-name)
+          (set-visited-file-name new-name)
+          (set-buffer-modified-p nil))))))
