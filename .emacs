@@ -32,7 +32,7 @@
 (show-paren-mode -1)
 
 ;; Split window in 2
-(split-window-right)
+;;(split-window-right)
 
 ;; Revert file changes from disk
 (global-auto-revert-mode t)
@@ -66,6 +66,9 @@
 
 ;; Ctr + A go to lone
 (global-set-key "\C-a" 'mark-whole-buffer)
+
+;; M + p to open recent
+(global-set-key "\M-p" 'recentf-open-files)
 
 ;; window movement
 (global-set-key [C-right] 'windmove-right)
