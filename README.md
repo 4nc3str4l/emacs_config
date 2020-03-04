@@ -109,6 +109,10 @@ Copy the current selection
 
 **F12**
 
+#### Open Recent File
+
+**Alt+p
+
 
 
 
