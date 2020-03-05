@@ -4,6 +4,11 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+; Stop Emacs from losing undo information by
+; setting very high limits for undo buffers
+(setq undo-limit 20000000)
+(setq undo-strong-limit 40000000)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -11,7 +16,7 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
- '(custom-enabled-themes (quote (manoj-dark)))
+ '(custom-enabled-themes (quote (wombat)))
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
@@ -58,7 +63,7 @@
 ;; Ctr + f find
 (global-set-key "\C-f" 'search-forward)
 
-;; Ctr + F4 kill buffer and window
+e;; Ctr + F4 kill buffer and window
 (global-set-key [C-f4] 'quit-window)
 
 ;; Ctr + G go to lone
