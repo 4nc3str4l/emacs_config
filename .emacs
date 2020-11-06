@@ -24,7 +24,7 @@
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 (ido-mode 1)
-(set-default-font "Ubuntu Mono-12")
+(set-frame-font "Ubuntu Mono-12")
 
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq backup-by-copying t)
